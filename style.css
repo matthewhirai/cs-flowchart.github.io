@@ -1,3 +1,6 @@
+.row {
+    margin-top: 30px;
+}
 .sem{
     font-family: Arial;
     display: flex;
@@ -12,10 +15,27 @@
     align-items: center;
     cursor: pointer;
     display: block;
+}
+.sem input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.form-check {
+    margin-left: -6px;
+}
+h4, h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.my-col {
+    width: 180px; 
+    margin-left: 30px;
+}
+.form-check-label {
     text-align: center;
     width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
     color: #bababa;
     font-size: 14px;
     border-radius: 4px;
@@ -23,9 +43,36 @@
     min-width: 70px;
     transition: 350ms;
 }
-.sem input{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
+.math {
+    border: 2px solid rgb(25, 0, 253);
+    background: rgba(25, 0, 253, 0.199);
+}
+.ge {
+    border: 2px solid rgb(131, 92, 59);
+    background: rgba(131, 92, 59, 0.199);
+}
+.cs {
+    border: 2px solid rgb(0, 151, 38);
+    background: rgba(0, 151, 38, 0.199);
+}
+.intro {
+    border: 2px solid gold;
+    background: rgba(255, 215, 0, 0.199);
+}
+table {
+    margin-top: 30px;
+}
+td {
+    border: 2px solid black;
+    width: 150px;
+    text-align: center;
+}
+@media screen and (max-width: 1045px){
+    .col-1 {
+        margin-left: 0;
+    }
+    table {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
