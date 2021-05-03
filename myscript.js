@@ -1,3 +1,4 @@
+//MAJOR DECLARATION
 var counter = 0;
 var temp = window.alert;
 $(function() {

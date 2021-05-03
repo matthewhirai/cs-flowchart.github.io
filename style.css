@@ -1,5 +1,5 @@
 .row {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .sem{
     font-family: Arial;
@@ -23,9 +23,12 @@
     top: 0;
 }
 .form-check {
-    margin-left: -6px;
+    margin-left: 0px;
 }
-.my-col {
+.col-1 {
+    margin-left: 5px;
+}
+.my-col, .legend {
     width: 180px; 
     margin-left: 30px;
 }
@@ -35,7 +38,7 @@
     color: #bababa;
     font-size: 14px;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     min-width: 70px;
     transition: 350ms;
 }
@@ -57,7 +60,8 @@
 }
 .box-footer{
     float:left;
-    margin-left: 330px;
+    margin-left: 340px;
+    margin-top: 6px;
     width: 440px;
     height: 100%;
     padding-top: 10px;
@@ -65,8 +69,16 @@
     background-color: rgba(196, 31, 196, 0.199);;
     text-align: center;
 }
+.electives{
+    float:right;
+    margin-left: 175px;
+    width: 310px;
+    height: 100%;
+    padding-top: 10px;
+    border-style: dashed;
+}
 table {
-    margin-top: 12px;
+    margin-top: 17px;
 }
 p {
     font-size: 13px;
@@ -82,6 +94,46 @@ h4, h2 {
 }
 @media screen and (max-width: 1045px){
     .col-1 {
-        margin-left: 0;
+        margin-left: 4px;
+    }
+    .bottom {
+        margin-top: 0px;
+    }
+    .box-footer {
+        margin-left: 55px;
+    }
+    .electives {
+        margin-top: 15px;
+        margin-left: 225px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 760px){
+    .col-1 {
+        margin-left: 0px;
+    }
+    .box-footer {
+        margin-left: 150px;
+    }
+    .electives {
+        margin-left: 215px;
+    }
+    .legend {
+        margin-left: 285px;
+    }
+}
+
+@media screen and (max-width: 655px){
+    .col-1 {
+        margin-left: 40px;
+    }
+    .box-footer {
+        margin-left: 20px;
+    }
+    .electives {
+        margin-left: 85px;
+    }
+    .legend {
+        margin-left: 155px;
     }
 }
