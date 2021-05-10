@@ -1,6 +1,6 @@
 //MAJOR DECLARATION
 var counter = 0;
-var temp = window.alert;
+// var temp = window.alert;
 $(function() {
     $(":checkbox").on("change", function() {
         if ((this.id === "122" || this.id === "123" || this.id === "sci" || this.id === "writing" || this.id === "oral") && this.checked) {
@@ -11,7 +11,7 @@ $(function() {
         }
     
         if (counter == 5 && (this.id === "122" || this.id === "123" || this.id === "sci" || this.id === "writing" || this.id === "oral")) {
-            window.alert = temp;
+            // window.alert = temp;
             alert('CONGRATULATIONS!!! YOU CAN NOW DECLARE YOUR MAJOR!!!');
         }
         else if (counter == 5 && (this.id !== "122" || this.id !== "123" || this.id !== "sci" || this.id !== "writing" || this.id !== "oral")) {
@@ -19,6 +19,23 @@ $(function() {
             alert('this is not shown');
         }
     });
+});
+
+//ELECTIVES
+$(document).ready(function() {
+    $(".electives").click(function () {
+        window.open("Electives.html");
+    });
+});
+
+//ELECTIVE STATE
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+// in the main page on load
+$(function() {
+    if (localStorage.getItem("cA") == "true")
+        $("#g1").prop("checked","true")
 });
 
 //MATH 123 and PHYS 151

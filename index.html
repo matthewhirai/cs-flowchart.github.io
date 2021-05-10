@@ -1,279 +1,280 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=900, initial-scale=1, shrink-to-fit=no">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=900, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="myscript.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<title>CS Flowchart</title>
-  </head>
-  <body class="container-fluid">
-	<form class="was-validated">
-		<div class="row" style="margin-top: 20px;">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="myscript.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<title>CS Flowchart</title>
+  	</head>
+	<body class="container-fluid">
+		<div class="row">
+			<p style="text-align: left; color: red; margin-bottom: 7px;">* Hover over the boxes to see the pre-requisites</p>
 			<h2>CSULB 2020-2021 CS 4-YEAR PLAN</h2>
 			<p style="text-align: center;"><b>Note</b>: This sheet is <b>UNOFFICIAL</b>. Your requirements may differ from these.
 				For your exact requirements, consult your
 				Academic Requirements Report.<br>
 				Four Year Plan – 120 units required </p>
 		</div>
-		<div class="row">
-			<div class="col-1 justify-content-center my-col">
-				<!-- SEMESTER 1 -->
-				<h4>Semester 1</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -13px;">
-						<input class="form-check-input is-valid" type="checkbox" id="writing" onclick="review.save();" required>
-						<label class="form-check-label ge" for="writing"><b>Writing Comm</b></label>
+		<form class="was-validated needs-validation">
+			<div class="row" id="checkbox-check">
+				<div class="col-1 justify-content-center my-col">
+					<!-- SEMESTER 1 -->
+					<h4>Semester 1</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -13px;">
+							<input class="form-check-input is-valid" type="checkbox" id="writing" onclick="review.save();" required>
+							<label class="form-check-label ge" for="writing"><b>Writing Comm</b></label>
+						</div>
+						<div class="form-check" style="margin-left: -4px;">
+							<input class="form-check-input is-valid" type="checkbox" id="oral" onclick="review.save();" required>
+							<label class="form-check-label ge" for="oral"><b>Oral Comm</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-valid" type="checkbox" id="101" onclick="review.save();" required>
+							<label class="form-check-label intro" for="101"><b>ENGR 101</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-valid" type="checkbox" id="122" onclick="review.save();" required>
+							<label class="form-check-label math" for="122"><b>MATH 122</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-valid" type="checkbox" id="100" onclick="review.save();" required>
+							<label class="form-check-label cs" for="100"><b>CECS 100</b></label>
+						</div>
 					</div>
-					<div class="form-check" style="margin-left: -4px;">
-						<input class="form-check-input is-valid" type="checkbox" id="oral" onclick="review.save();" required>
-						<label class="form-check-label ge" for="oral"><b>Oral Comm</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-valid" type="checkbox" id="101" onclick="review.save();" required>
-						<label class="form-check-label intro" for="101"><b>ENGR 101</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-valid" type="checkbox" id="122" onclick="review.save();" required>
-						<label class="form-check-label math" for="122"><b>MATH 122</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-valid" type="checkbox" id="100" onclick="review.save();" required>
-						<label class="form-check-label cs" for="100"><b>CECS 100</b></label>
-					</div>
+					<br>
 				</div>
-				<br>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 2 -->
+					<h4>Semester 2</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -4px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="sci" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete MATH 122 first." class="form-check-label math" for="sci"><b>PHYS 151/<br>CHEM 111A</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="123" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete MATH 122 first." class="form-check-label math" for="123"><b>MATH 123</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="174" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete MATH 122 and CECS 100 first." class="form-check-label cs" for="174"><b>CECS 174</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" disabled = disabled type="checkbox" id="225" onclick="review.save();" required>
+							<label data-bs-toggle="tooltip" title="Recommended to take with CECS 174."class="form-check-label cs" for="225"><b>CECS 225</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="102" onclick="review.save();" required>
+							<label data-bs-toggle="tooltip" title="Complete ENGR 101 first." class="form-check-label intro" for="102"><b>ENGR 102</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-valid" type="checkbox" id="105" onclick="review.save();" required>
+							<label class="form-check-label intro" for="105"><b>CECS 105</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 3 -->
+					<h4>Semester 3</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -10px;">
+							<input class="form-check-input is-valid" type="checkbox" id="bio" onclick="review.save();" required>
+							<label class="form-check-label math" for="bio"><b>BIOL 153/200<br>205/207</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="228" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label math" for="228"><b>CECS 228</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="274" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label cs" for="274"><b>CECS 274</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="277" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label cs" for="277"><b>CECS 277</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 10px;">
+							<input class="form-check-input is-valid" type="checkbox" id="c1" onclick="review.save();" required>
+							<label class="form-check-label ge" for="c1"><b>C1 GE</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 4 -->
+					<h4>Semester 4</h4>
+					<div class="sem">
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="229" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete MATH 123 and CECS 228 first." class="form-check-label math" for="229"><b>CECS 229</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="328" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 228 and CECS 274 first." class="form-check-label cs" for="328"><b>CECS 328</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="282" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 274 and 277 first." class="form-check-label cs" for="282"><b>CECS 282</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="341" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 225 first." class="form-check-label cs" for="341"><b>CECS 341</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 10px;">
+							<input class="form-check-input is-valid" type="checkbox" id="c2" onclick="review.save();" required>
+							<label class="form-check-label ge" for="c2"><b>C2 GE</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 5 -->
+					<h4>Semester 5</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -0.5px;">
+							<input class="form-check-input is-valid" type="checkbox" id="350" onclick="review.save();" required>
+							<label  class="form-check-label cs" for="350"><b>ENGR 350</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="329" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 328 first." class="form-check-label cs" for="329"><b>CECS 329</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="342" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 328 first." class="form-check-label cs" for="342"><b>CECS 342</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="326" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 282 and 341 first." class="form-check-label cs" for="326"><b>CECS 326</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 10px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="381" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 229 first." class="form-check-label math" for="381"><b>EE 381</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 10px;">
+							<input class="form-check-input is-valid" type="checkbox" id="d2" onclick="review.save();" required>
+							<label class="form-check-label ge" for="d2"><b>D2 GE</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 6 -->
+					<h4>Semester 6</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -0.5px;">
+							<input class="form-check-input is-invalid" type="checkbox" id="361" onclick="review.save();" required>
+							<label class="form-check-label cs" for="361"><b>ENGR 361</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled  id="378" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 274 and 229 first." class="form-check-label cs" for="378"><b>CECS 378</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="323" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 228 and 277/282 first." class="form-check-label cs" for="323"><b>CECS 323</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="327" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 326 first." class="form-check-label cs" for="327"><b>CECS 327</b></label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="343" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 277/282 first." class="form-check-label cs" for="343"><b>CECS 343</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 7 -->
+					<h4>Semester 7</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -14px; margin-right: 11px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="g1" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Click the electives box to see the pre-requisites." class="form-check-label cs" for="g1"><b>CS Group 1 Elec.</b></label>
+						</div>
+						<div class="form-check" style="margin-left: -14px; margin-right: 11px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="g2" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Click the electives box to see the pre-requisites." class="form-check-label cs" for="g2"><b>CS Group 1/2 Elec.</b></label>
+						</div>
+						<div class="form-check" style="margin-left: -8.5px;">
+							<input class="form-check-input is-valid" type="checkbox" id="c3" onclick="review.save();" required>
+							<label class="form-check-label ge" for="c3"><b>C1/C2/C3 GE</b></label>
+						</div>
+						<div class="form-check" style="margin-left: -4px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="491A" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 343 and ENGR 350 first." class="form-check-label intro" for="491A"><b>CECS 491A</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 10px;">
+							<input class="form-check-input is-valid" type="checkbox" id="d1" onclick="review.save();" required>
+							<label class="form-check-label ge" for="d1"><b>D1 GE</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
+				<div class="col-1 justify-content-center" style="width: 180px;">
+					<!-- SEMESTER 8 -->
+					<h4>Semester 8</h4>
+					<div class="sem">
+						<div class="form-check" style="margin-left: -12px; margin-right: 10px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="g12" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Click the electives box to see the pre-requisites." class="form-check-label cs" for="g12"><b>CS Group 1 Elec.</b></label>
+						</div>
+						<div class="form-check" style="margin-left: -3.5px;">
+							<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="491B" onclick="review.save();" required>
+							<label data-toggle="tooltip" title="Complete CECS 491A first." class="form-check-label intro" for="491B"><b>CECS 491B</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 11px;">
+							<input class="form-check-input is-valid" type="checkbox" id="d3" onclick="review.save();" required>
+							<label class="form-check-label ge" for="d3"><b>D3 GE</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 11px;">
+							<input class="form-check-input is-valid" type="checkbox" id="udc" onclick="review.save();" required>
+							<label class="form-check-label ge" for="udc"><b>UD C</b></label>
+						</div>
+						<div class="form-check" style="margin-left: 11px;">
+							<input class="form-check-input is-valid" type="checkbox" id="udd" onclick="review.save();" required>
+							<label class="form-check-label ge" for="udd"><b>UD D</b></label>
+						</div>
+					</div>
+					<br>
+				</div>
 			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 2 -->
-				<h4>Semester 2</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -4px;">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="sci" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete MATH 122 first." class="form-check-label math" for="sci"><b>PHYS 151/<br>CHEM 111A</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="123" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete MATH 122 first." class="form-check-label math" for="123"><b>MATH 123</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="174" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete MATH 122 and CECS 100 first." class="form-check-label cs" for="174"><b>CECS 174</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" disabled = disabled type="checkbox" id="225" onclick="review.save();" required>
-						<label data-bs-toggle="tooltip" title="Recommended to take with CECS 174."class="form-check-label cs" for="225"><b>CECS 225</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="102" onclick="review.save();" required>
-						<label data-bs-toggle="tooltip" title="Complete ENGR 101 first." class="form-check-label intro" for="102"><b>ENGR 102</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-valid" type="checkbox" id="105" onclick="review.save();" required>
-						<label class="form-check-label intro" for="105"><b>CECS 105</b></label>
-					</div>
-				</div>
-				<br>
+		</form>
+		<div class="row bottom">
+			<div class="legend" style="float:left;">
+				<table> 
+					<tbody> 
+						<tr style="background: rgba(255, 215, 0, 0.199);"><td>Introductory</td></tr> 
+						<tr style="background: rgba(25, 0, 253, 0.199);"><td>Science & Math</td></tr>
+						<tr style="background: rgba(170, 168, 166, 0.199)"><td>General Education</td></tr>
+						<tr style="background: rgba(0, 151, 38, 0.199);"><td>Computer Science</td></tr>
+					</tbody> 
+				</table> 
 			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 3 -->
-				<h4>Semester 3</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="bio" onclick="review.save();" required>
-						<label class="form-check-label math" for="bio"><b>BIOL 153/200<br>205/207</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="228" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label math" for="228"><b>CECS 228</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="274" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label cs" for="274"><b>CECS 274</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="277" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 174 first." class="form-check-label cs" for="277"><b>CECS 277</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="c1" onclick="review.save();" required>
-						<label class="form-check-label ge" for="c1"><b>C1 GE</b></label>
-					</div>
-				</div>
-				<br>
+			<div class="box-footer">
+				<h6>Contact Information</h6>
+				<p>CECS	Office Phone: 562-985-4285<br>
+					Advising by	student’s last name<br>
+					<b>A thru L</b>: Dr. Morales Ponce, oscar.moralesponce@csulb.edu, ECS-543<br>
+					<b>M thru Z</b>: Dr. Zhang, wenlu.zhang@csulb.edu,	ECS-550</p>
 			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 4 -->
-				<h4>Semester 4</h4>
-				<div class="sem">
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="229" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete MATH 123 and CECS 228 first." class="form-check-label math" for="229"><b>CECS 229</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="328" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 228 and CECS 274 first." class="form-check-label cs" for="328"><b>CECS 328</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="282" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 274 and 277 first." class="form-check-label cs" for="282"><b>CECS 282</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="341" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 225 first." class="form-check-label cs" for="341"><b>CECS 341</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="c2" onclick="review.save();" required>
-						<label class="form-check-label ge" for="c2"><b>C2 GE</b></label>
-					</div>
-				</div>
-				<br>
-			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 5 -->
-				<h4>Semester 5</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -0.5px;">
-						<input class="form-check-input is-valid" type="checkbox" id="350" onclick="review.save();" required>
-						<label  class="form-check-label cs" for="350"><b>ENGR 350</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="329" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 328 first." class="form-check-label cs" for="329"><b>CECS 329</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="342" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 328 first." class="form-check-label cs" for="342"><b>CECS 342</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="326" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 282 and 341 first." class="form-check-label cs" for="326"><b>CECS 326</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 10px;">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="381" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 229 first." class="form-check-label math" for="381"><b>EE 381</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="d2" onclick="review.save();" required>
-						<label class="form-check-label ge" for="d2"><b>D2 GE</b></label>
-					</div>
-				</div>
-				<br>
-			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 6 -->
-				<h4>Semester 6</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -0.5px;">
-						<input class="form-check-input is-invalid" type="checkbox" id="361" onclick="review.save();" required>
-						<label class="form-check-label cs" for="361"><b>ENGR 361</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled  id="378" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 274 and 229 first." class="form-check-label cs" for="378"><b>CECS 378</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="323" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 228 and 277/282 first." class="form-check-label cs" for="323"><b>CECS 323</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="327" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 326 first." class="form-check-label cs" for="327"><b>CECS 327</b></label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="343" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 277/282 first." class="form-check-label cs" for="343"><b>CECS 343</b></label>
-					</div>
-				</div>
-				<br>
-			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 7 -->
-				<h4>Semester 7</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -14px; margin-right: 11px;">
-						<input class="form-check-input is-valid" type="checkbox" id="g1" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Make sure you complete the specific pre-reqs for the course first." class="form-check-label cs" for="g1"><b>CS Group 1 Elec.</b></label>
-					</div>
-					<div class="form-check" style="margin-left: -14px; margin-right: 11px;">
-						<input class="form-check-input is-invalid" type="checkbox" id="g2" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Make sure you complete the specific pre-reqs for the course first." class="form-check-label cs" for="g2"><b>CS Group 1/2 Elec.</b></label>
-					</div>
-					<div class="form-check" style="margin-left: -8.5px;">
-						<input class="form-check-input is-valid" type="checkbox" id="c3" onclick="review.save();" required>
-						<label class="form-check-label ge" for="c3"><b>C1/C2/C3 GE</b></label>
-					</div>
-					<div class="form-check" style="margin-left: -4px;">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="491A" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 343 and ENGR 350 first." class="form-check-label intro" for="491A"><b>CECS 491A</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="d1" onclick="review.save();" required>
-						<label class="form-check-label ge" for="d1"><b>D1 GE</b></label>
-					</div>
-				</div>
-				<br>
-			</div>
-			<div class="col-1 justify-content-center" style="width: 180px;">
-				<!-- SEMESTER 8 -->
-				<h4>Semester 8</h4>
-				<div class="sem">
-					<div class="form-check" style="margin-left: -12px; margin-right: 10px;">
-						<input class="form-check-input is-valid" type="checkbox" id="g12" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Make sure you complete the specific pre-reqs for the course first." class="form-check-label cs" for="g12"><b>CS Group 1 Elec.</b></label>
-					</div>
-					<div class="form-check" style="margin-left: -3.5px;">
-						<input class="form-check-input is-invalid" type="checkbox" disabled = disabled id="491B" onclick="review.save();" required>
-						<label data-toggle="tooltip" title="Complete CECS 491A first." class="form-check-label intro" for="491B"><b>CECS 491B</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 11px;">
-						<input class="form-check-input is-valid" type="checkbox" id="d3" onclick="review.save();" required>
-						<label class="form-check-label ge" for="d3"><b>D3 GE</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 11px;">
-						<input class="form-check-input is-valid" type="checkbox" id="udc" onclick="review.save();" required>
-						<label class="form-check-label ge" for="udc"><b>UD C</b></label>
-					</div>
-					<div class="form-check" style="margin-left: 11px;">
-						<input class="form-check-input is-valid" type="checkbox" id="udd" onclick="review.save();" required>
-						<label class="form-check-label ge" for="udd"><b>UD D</b></label>
-					</div>
-				</div>
-				<br>
+			<div class="electives" id="electives" style="cursor: pointer;">
+				<p><b>Electives</b>:<br>
+					<b>Select	6	units	from	(Group	1)</b>:<br>
+					CECS 419, 428, 429, 444, 445, 448, 449, 451, 455,<br>
+					456, 474, 478, 495,	497, MATH 323<br>
+					<b>Select 3 units from (Group 2)</b>:<br>
+					CECS 303, 450, 453,	461, 470, 475, 476</p>
 			</div>
 		</div>
-	</form>
-	<div class="row bottom">
-		<div class="legend" style="float:left;">
-			<table> 
-				<tbody> 
-					<tr style="background: rgba(255, 215, 0, 0.199);"><td>Introductory</td></tr> 
-					<tr style="background: rgba(25, 0, 253, 0.199);"><td>Science & Math</td></tr>
-					<tr style="background: rgba(131, 92, 59, 0.199);"><td>General Education</td></tr>
-					<tr style="background: rgba(0, 151, 38, 0.199);"><td>Computer Science</td></tr>
-				</tbody> 
-			</table> 
-		</div>
-		<div class="box-footer">
-			<h6>Contact Information</h6>
-			<p>CECS	Office Phone: 562-985-4285<br>
-				Advising by	student’s last name<br>
-				<b>A thru L</b>: Dr. Morales Ponce, oscar.moralesponce@csulb.edu, ECS-543<br>
-				<b>M thru Z</b>: Dr. Zhang, wenlu.zhang@csulb.edu,	ECS-550</p>
-		</div>
-		<div class="electives">
-			<p><b>Electives</b>:<br>
-				<b>Select	6	units	from	(Group	1)</b>:<br>
-				CECS 419, 428, 429, 444, 445, 448, 449, 451, 455,<br>
-				456, 474, 478, 495,	497, MATH 323<br>
-				<b>Select 3 units from (Group 2)</b>:<br>
-				CECS 303, 450, 453,	461, 470, 475, 476</p>
-		</div>
-	</div>
-  </body>
+	</body>
 </html>
