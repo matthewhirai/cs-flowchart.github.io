@@ -21,22 +21,12 @@ $(function() {
     });
 });
 
-//ELECTIVES
-$(document).ready(function() {
-    $(".electives").click(function () {
-        window.open("Electives.html");
-    });
-});
-
-//ELECTIVE STATE
-$("#cA").change(function (event) {
-    localStorage.setItem("cA",$("#cA").is(":checked"));
-});
-// in the main page on load
-$(function() {
-    if (localStorage.getItem("cA") == "true")
-        $("#g1").prop("checked","true")
-});
+function scrollToDiv(div){
+   setTimeout(function(){
+    $('html, body').animate({
+        scrollTop: $(div).offset().top }, 100);
+   },100);
+}
 
 //MATH 123 and PHYS 151
 $(document).on('click', function () {
@@ -137,15 +127,25 @@ $(document).on('click', function () {
     } 
 });
 
-//CECS 329/342
+//CECS 329/342/419/428/451/453/455
 $(document).on('click', function () {
     if ($('#328').is(":checked")) {
         $("#329").prop('disabled', false);
         $("#342").prop('disabled', false);
+        $("#419").prop('disabled', false);
+        $("#428").prop('disabled', false);
+        $("#451").prop('disabled', false);
+        $("#453").prop('disabled', false);
+        $("#455").prop('disabled', false);
     }
     else {
         $('#329').prop('checked', false);$("#329").prop('disabled', true);
         $('#342').prop('checked', false);$("#342").prop('disabled', true);
+        $('#419').prop('checked', false);$("#419").prop('disabled', true);
+        $('#428').prop('checked', false);$("#428").prop('disabled', true);
+        $('#451').prop('checked', false);$("#451").prop('disabled', true);
+        $('#453').prop('checked', false);$("#453").prop('disabled', true);
+        $('#455').prop('checked', false);$("#455").prop('disabled', true);
     } 
 });
 
@@ -199,6 +199,134 @@ $(document).on('click', function () {
     } 
 });
 
+//CECS 429
+$(document).on('click', function () {
+    if ($('#323').is(":checked") && ($('#328').is(":checked") || $('#380').is(":checked") || $('#381').is(":checked"))) {
+        $("#429").prop('disabled', false);
+    }
+    else {
+        $('#429').prop('checked', false);$("#429").prop('disabled', true);
+    } 
+});
+
+//CECS 444
+$(document).on('click', function () {
+    if ($('#328').is(":checked") && $('#341').is(":checked")) {
+        $("#444").prop('disabled', false);
+    }
+    else {
+        $('#444').prop('checked', false);$("#444").prop('disabled', true);
+    } 
+});
+
+//CECS 445/448/450/475
+$(document).on('click', function () {
+    if ($('#343').is(":checked")) {
+        $("#445").prop('disabled', false);
+        $("#448").prop('disabled', false);
+        $("#450").prop('disabled', false);
+        $("#475").prop('disabled', false);
+    }
+    else {
+        $('#445').prop('checked', false);$("#445").prop('disabled', true);
+        $('#448').prop('checked', false);$("#448").prop('disabled', true);
+        $('#450').prop('checked', false);$("#450").prop('disabled', true);
+        $('#475').prop('checked', false);$("#475").prop('disabled', true);
+    } 
+});
+
+//CECS 449
+$(document).on('click', function () {
+    if ($('#328').is(":checked") && ($('#229').is(":checked") || $('#247').is(":checked"))) {
+        $("#449").prop('disabled', false);
+    }
+    else {
+        $('#449').prop('checked', false);$("449").prop('disabled', true);
+    } 
+});
+
+//CECS 456
+$(document).on('click', function () {
+    if ($('#381').is(":checked") || $('#m381').is(":checked")) {
+        $("#456").prop('disabled', false);
+    }
+    else {
+        $('#456').prop('checked', false);$("456").prop('disabled', true);
+    } 
+});
+
+//CECS 474/476
+$(document).on('click', function () {
+    if ($('#326').is(":checked")) {
+        $("#474").prop('disabled', false);
+        $("#476").prop('disabled', false);
+    }
+    else {
+        $('#474').prop('checked', false);$("474").prop('disabled', true);
+        $('#476').prop('checked', false);$("476").prop('disabled', true);
+    } 
+});
+
+//CECS 478
+$(document).on('click', function () {
+    if ($('#328').is(":checked") || $('#346').is(":checked")) {
+        $("#478").prop('disabled', false);
+    }
+    else {
+        $('#478').prop('checked', false);$("478").prop('disabled', true);
+    } 
+});
+
+//CECS 495
+$(document).on('click', function () {
+    if ($('#381').is(":checked")) {
+        $("#495").prop('disabled', false);
+    }
+    else {
+        $('#495').prop('checked', false);$("495").prop('disabled', true);
+    } 
+});
+
+//MATH 323
+$(document).on('click', function () {
+    if ($('#224').is(":checked")) {
+        $("#m323").prop('disabled', false);
+    }
+    else {
+        $('#m323').prop('checked', false);$("m323").prop('disabled', true);
+    } 
+});
+
+//303
+$(document).on('click', function () {
+    if ($('#278').is(":checked") || $('#378').is(":checked")) {
+        $("#303").prop('disabled', false);
+    }
+    else {
+        $('#303').prop('checked', false);$("303").prop('disabled', true);
+    } 
+});
+
+//470
+$(document).on('click', function () {
+    if ($('#323').is(":checked") || $('#343').is(":checked")) {
+        $("#470").prop('disabled', false);
+    }
+    else {
+        $('#470').prop('checked', false);$("470").prop('disabled', true);
+    } 
+});
+
+//461
+$(document).on('click', function () {
+    if ($('#341').is(":checked") || $('#440').is(":checked")) {
+        $("#461").prop('disabled', false);
+    }
+    else {
+        $('#461').prop('checked', false);$("461").prop('disabled', true);
+    } 
+});
+
 //CECS 491A
 $(document).on('click', function () {
     if ($('#350').is(":checked") && ($('#277').is(":checked") || $('#282').is(":checked"))) {
@@ -216,5 +344,15 @@ $(document).on('click', function () {
     }
     else {
         $('#491B').prop('checked', false);$("#491B").prop('disabled', true);
+    } 
+});
+
+//MATH 224
+$(document).on('click', function () {
+    if ($('#123').is(":checked")) {
+        $("#224").prop('disabled', false);
+    }
+    else {
+        $('#224').prop('checked', false);$("224").prop('disabled', true);
     } 
 });

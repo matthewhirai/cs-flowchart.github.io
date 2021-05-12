@@ -28,7 +28,11 @@
 .col-1 {
     margin-left: 5px;
 }
-.my-col, .legend {
+.my-col{
+    width: 180px; 
+    margin-left: 20px;
+}
+.legend {
     width: 180px; 
     margin-left: 30px;
 }
@@ -58,9 +62,17 @@
     border: 2px solid gold;
     background: rgba(255, 215, 0, 0.199);
 }
+.group1 {
+    border: 2px solid gold;
+    background: rgba(255, 215, 0, 0.199);
+}
+.group2 {
+    border: 2px solid gold;
+    background: rgba(255, 215, 0, 0.199);
+}
 .box-footer{
-    float:left;
-    margin-left: 340px;
+    float: left;
+    margin-left: 330px;
     margin-top: 6px;
     width: 440px;
     height: 100%;
@@ -70,8 +82,8 @@
     text-align: center;
 }
 .electives{
-    float:right;
-    margin-left: 175px;
+    float: right;
+    margin-left: 180px;
     width: 310px;
     height: 100%;
     padding-top: 10px;
@@ -79,11 +91,12 @@
 }
 table {
     margin-top: 17px;
+    border: 2px solid black;
 }
 p {
     font-size: 13px;
 }
-td {
+td, th, tr {
     border: 2px solid black;
     width: 150px;
     text-align: center;
@@ -128,6 +141,7 @@ h4, h2 {
         margin-left: 40px;
     }
     .box-footer {
+        margin-top: 15px;
         margin-left: 20px;
     }
     .electives {
