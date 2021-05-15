@@ -21,13 +21,6 @@ $(function() {
     });
 });
 
-function scrollToDiv(div){
-   setTimeout(function(){
-    $('html, body').animate({
-        scrollTop: $(div).offset().top }, 100);
-   },100);
-}
-
 //MATH 123 and PHYS 151
 $(document).on('click', function () {
     if ($('#122').is(":checked")) {
@@ -353,6 +346,22 @@ $(document).on('click', function () {
         $("#224").prop('disabled', false);
     }
     else {
-        $('#224').prop('checked', false);$("224").prop('disabled', true);
+        $('#224').prop('checked', false);$("#224").prop('disabled', true);
     } 
+});
+
+//Group 1 Elec
+$(document).on('click', function () {
+    var checkboxes = $('input.group1:checkbox:checked').length;
+    if (checkboxes == 1 ) {
+        $("#g1").prop('disabled', false);
+        $("#g12").prop('disabled', true);
+    }
+    else if (checkboxes == 2){
+        $("#g12").prop('disabled', false);
+    }
+    else if (checkboxes == 0){
+        $('#g1').prop('checked', false);$("#g1").prop('disabled', true);
+        $('#g12').prop('checked', false);$("#g12").prop('disabled', true);
+    }
 });
