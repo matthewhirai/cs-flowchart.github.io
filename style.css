@@ -1,13 +1,12 @@
 .row {
     margin-top: 10px;
 }
-.sem{
-    font-family: Arial;
+.sem, .e-classes{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.sem label{
+.sem label, .e-classes label{
     position: relative;
     margin: 4px 15px 4px 0;
     display: inline-flex;
@@ -16,7 +15,7 @@
     cursor: pointer;
     display: block;
 }
-.sem input{
+.sem input, .e-classes input{
     opacity: 0;
     position: absolute;
     left: 0;
@@ -46,6 +45,26 @@
     min-width: 70px;
     transition: 350ms;
 }
+.form-check-inline {
+    text-align: center;
+    width: 20%;
+    margin-left: 30px;
+    margin-right: 0;
+    color: #bababa;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    min-width: 70px;
+    transition: 350ms;
+}
+.col-5 .form-check-inline{
+    width: 30%;
+    margin-left: 13.5px;
+}
+h5 {
+    text-align: center;
+
+}
 .math {
     border: 2px solid rgb(25, 0, 253);
     background: rgba(25, 0, 253, 0.199);
@@ -63,12 +82,12 @@
     background: rgba(255, 215, 0, 0.199);
 }
 .group1 {
-    border: 2px solid gold;
-    background: rgba(255, 215, 0, 0.199);
+    border: 2px solid rgb(255, 163, 178);
+    background: rgba(255, 163, 178, 0.199);
 }
 .group2 {
-    border: 2px solid gold;
-    background: rgba(255, 215, 0, 0.199);
+    border: 2px solid rgb(255, 81, 0);
+    background: rgba(255, 81, 0, 0.199);
 }
 .box-footer{
     float: left;
@@ -120,6 +139,14 @@ h4, h2 {
         margin-left: 225px;
         margin-bottom: 20px;
     }
+    .form-check-inline {
+        width: 40%;
+        margin-left: 27px;
+    }
+    .col-5 .form-check-inline{
+        width: 40%;
+        margin-left: 19px;
+    }
 }
 @media screen and (max-width: 760px){
     .col-1 {
@@ -149,5 +176,13 @@ h4, h2 {
     }
     .legend {
         margin-left: 155px;
+    }
+    .form-check-inline {
+        width: 20%;
+        margin-left: 7px;
+    }
+    .col-5 .form-check-inline{
+        width: 20%;
+        margin-left: 10px;
     }
 }
