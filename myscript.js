@@ -356,12 +356,35 @@ $(document).on('click', function () {
     if (checkboxes == 1 ) {
         $("#g1").prop('disabled', false);
         $("#g12").prop('disabled', true);
+        $("#g2").prop('disabled', true);
     }
-    else if (checkboxes == 2){
+    else if (checkboxes == 2){  //opens up both group 1 elec boxes
         $("#g12").prop('disabled', false);
+        $("#g2").prop('disabled', true);
+    }
+    else if (checkboxes == 3) {     //opens the all group elec, disabling group 1 and 2 choices (not included teh checked ones)
+        $("#g2").prop('disabled', false);
+        $(".group2").prop('disabled', true);$(".group2").prop('checked', false);
+        $('input.group1:not(:checked)').prop('disabled', true);
     }
     else if (checkboxes == 0){
         $('#g1').prop('checked', false);$("#g1").prop('disabled', true);
-        $('#g12').prop('checked', false);$("#g12").prop('disabled', true);
+    }
+});
+
+//Group 2 Elec
+$(document).on('click', function () {
+    var checkboxes = $('input.group1:checkbox:checked').length;
+    var checkboxes2 = $('input.group2:checkbox:checked').length;
+    if (checkboxes2 == 1 ) {
+        $("#g2").prop('disabled', false);
+        $('input.group2:not(:checked)').prop('disabled', true);
+    }
+    else if (checkboxes2 == 0 && checkboxes <= 2){  //disables group 1/2 elec if no g2 are checked and if less than 3 g1 are checked
+        $('#g2').prop('checked', false);$("#g2").prop('disabled', true);
+    }
+    else if (checkboxes2 == 1 && checkboxes == 2){  
+        $('input.group1:not(:checked)').prop('disabled', true);
+        $('input.group2:not(:checked)').prop('disabled', true);
     }
 });
