@@ -350,6 +350,17 @@ $(document).on('click', function () {
     } 
 });
 
+//CECS 497
+$(document).on('click', function () {
+    if ($('#consent').is(":checked")) {
+        $("#497").prop('disabled', false);
+    }
+    else {
+        $('#497').prop('checked', false);$("#497").prop('disabled', true);
+    } 
+});
+
+
 //Group 1 Elec
 $(document).on('click', function () {
     var checkboxes = $('input.group1:checkbox:checked').length;
