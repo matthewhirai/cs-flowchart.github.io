@@ -388,3 +388,13 @@ $(document).on('click', function () {
         $('input.group2:not(:checked)').prop('disabled', true);
     }
 });
+
+//Disables all unchecked group electives if they check 2 group 1 elec and 1 group 2 elec
+$(document).on('click', function () {
+    var checkboxes = $('input.group1:checkbox:checked').length;
+    var checkboxes2 = $('input.group2:checkbox:checked').length;
+    if (checkboxes2 == 1 && checkboxes == 2){  
+        $('input.group1:not(:checked)').prop('disabled', true);
+        $('input.group2:not(:checked)').prop('disabled', true);
+    }
+});
