@@ -17,7 +17,7 @@
 }
 .sem input, .e-classes input, .mis input{
     opacity: 0;
-    position: absolute;
+    display: none;
     left: 0;
     top: 0;
 }
@@ -187,5 +187,8 @@ h4, h2 {
     .col-5 .form-check-inline{
         width: 20%;
         margin-left: 10px;
+    }
+    .form-check-inline label {
+        font-size: 12px;
     }
 }
